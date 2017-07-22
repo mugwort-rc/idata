@@ -1,0 +1,201 @@
+"survey":
+  "country": "jp"
+  "name": "国勢調査"
+  "datetime": "2015-10-01T00:00:00+0900"
+"title": "人口等基本集計 第1表　人口，人口増減(平成22年～27年)，面積，人口密度，世帯数及び世帯数増減(平成22年～27年)"
+"title:en": "Table 1. Population, Population Change(2010-2015)"
+"creator":
+  "name": "総務省統計局"
+  "homepage": "http://www.stat.go.jp/"
+"source":
+- "url": "http://www.stat.go.jp/data/kokusei/2015/"
+  "last_visit": "2017-07-20"
+"notes":
+- "人口欄の「平成22年（組替）」及び世帯数欄の「平成22年（組替）」は，平成27年10月1日現在の市区町村の境域に基づいて組み替えた平成22年の人口及び世帯数を示す。"
+- "1) 国土交通省国土地理院「平成27年全国都道府県市区町村別面積調」による。ただし，平成12年の地域については「平成12年全国都道府県市区町村別面積調」による。また，平成12年の境界未定地域については，総務省統計局において面積を推定している。"
+- "2) 「面積及び人口集中地区に関する留意事項」を参照。"
+"see":
+- "国土交通省国土地理院「平成27年全国都道府県市区町村別面積調」"
+- "「面積及び人口集中地区に関する留意事項」"
+"tags":
+- "国勢調査"
+- "人口"
+- "世帯数"
+"type": "simpleTable"
+"mimeType": "text/csv"
+"hints":
+- "type": "filename"
+  "regex": "001_\\d{2}.csv"
+- "type": "digest"
+  "data":
+  - "sha1:fe6b89fe95e354a17aa28962d3151ec75a7be510"
+"startIndex": 10
+"columns":
+- "name": "地域コード"
+  "n": 2
+  "type": "int"
+  "dataType": "qualitative"
+  "nullable": true
+  "regex": "(\\d{2})(\\d{3})"
+  "see":
+  - "http://www.soumu.go.jp/denshijiti/code.html"
+  - "http://www.soumu.go.jp/main_content/000137948.pdf"
+- "name": "地域識別コード"
+  "type": "alnum"
+  "dataType": "qualitative"
+  "regex": "(\\d|[abcd])"
+  "enum":
+    "map":
+      "0": "特別区及び指定都市の区"
+      "1": "指定都市"
+      "2": "市"
+      "3": "町村"
+      "9": "旧市区町村"
+      "a": "都道府県"
+      "b": "市部/区部"
+      "c": "支庁所管区域"
+      "d": "人口集中地区"
+    "see":
+    - "http://www.soumu.go.jp/denshijiti/code.html"
+    - "http://www.soumu.go.jp/main_content/000137948.pdf"
+- "name": "境域年次(2015)"
+  "type": "int"
+  "dataType": "qualitative"
+  "nullable": true
+- "name": "境域年次(2000)"
+  "type": "int"
+  "dataType": "qualitative"
+  "nullable": true
+- "name": "name"
+  "type": "str"
+- "name": "to21-01.0001"
+  "aliases":
+  - "人口　平成27年"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "to21-01.0002"
+  "aliases":
+  - "人口　平成22年（組替）"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+  "see":
+  - "$config@notes[2]"
+- "name": "to21-01.0003"
+  "aliases":
+  - "平成22年～27年の人口増減数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+  "notes":
+  - "type": "expr"
+    "expr": "${to21-01.0001} - ${to21-01.0002}"
+  "see":
+  - "$config@notes[2]"
+- "name": "to21-01.0004"
+  "aliases":
+  - "平成22年～27年の人口増減率（％）"
+  "type": "float"
+  "dataType": "quantitative"
+  "unit": "%"
+  "notes":
+  - "type": "expr"
+    "expr": "${to21-01.0003} / ${to21-01.0002} * 100"
+  "see":
+  - "$config@notes[2]"
+- "name": "to21-01.0005"
+  "aliases":
+  - "面積（㎞²）"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "㎞²"
+  "see":
+  - "$config@notes[1]"
+  - "$config@notes[2]"
+- "name": "to21-01.0006"
+  "aliases":
+  - "人口密度（1㎞²当たり）"
+  "type": "float"
+  "dataType": "quantitative"
+  "unit": "人/㎞²"
+  "notes":
+  - "type": "expr"
+    "expr": "${to21-01.0001} / ${to21-01.0005}"
+  "see":
+  - "$config@notes[2]"
+- "name": "to21-01.0007"
+  "aliases":
+  - "世帯数　平成27年"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "世帯"
+- "name": "to21-01.0008"
+  "aliases":
+  - "世帯数　平成22年（組替）"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "世帯"
+  "see":
+  - "$config@notes[2]"
+- "name": "to21-01.0009"
+  "aliases":
+  - "平成22年～27年の世帯数増減数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "世帯"
+  "notes":
+  - "type": "expr"
+    "expr": "${to21-01.0007} - ${to21-01.0008}"
+  "see":
+  - "$config@notes[2]"
+- "name": "to21-01.0010"
+  "aliases":
+  - "平成22年～27年の世帯数増減率（％）"
+  "type": "float"
+  "dataType": "quantitative"
+  "unit": "%"
+  "notes":
+  - "type": "expr"
+    "expr": "${to21-01.0009} / ${to21-01.0008} * 100"
+  "see":
+  - "$config@notes[2]"
+"asserts":
+  "prepare":
+  - "type": "row"
+    "row": 0
+    "f": "eq"
+    "args":
+      "source": 1
+      "value": "平成27年国勢調査人口等基本集計（総務省統計局）"
+  - "type": "row"
+    "row": 1
+    "f": "in"
+    "args":
+      "value": "第1表"
+      "source": 7
+  - "type": "row"
+    "row": 7
+    "f": "eq"
+    "args":
+      "source": "7:_1+10"
+      "value": "$config@columns[5:]@name"
+"correction":
+  "context":
+  - "name": "previous_name"
+    "type": "dict"
+    "expr": "previous_name[${地域識別コード}] = ${name}"
+  - "name": "current_name"
+    "type": "str"
+    "expr": "if ${地域コード} is not None:\n    current_name = ${name}"
+  "switch":
+  - "switch": "${地域識別コード} == 9"
+    "then":
+      "type": "overwrite"
+      "to": "name"
+      "expr": "${ctx.previous_name} + ${name}"
+  - "switch": "${地域識別コード} == 'd' and ${地域コード} is None"
+    "then":
+      "type": "overwrite"
+      "to": "name"
+      "expr": "${ctx.current_name} + ${name}"
