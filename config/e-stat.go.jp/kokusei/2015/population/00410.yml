@@ -12,7 +12,7 @@
   "last_visit": "2017-07-20"
 "notes":
 - "1) 日本人・外国人の別「不詳」を含む。"
-"type": "simpleTable"
+"type": "stackedTable"
 "mimeType": "text/csv"
 "hints":
 - "type": "filename"
@@ -21,6 +21,349 @@
   "data":
   - "sha1:ae5628889c0681f62bda54030c474d34390cc183"
 "startIndex": 13
+"stacked":
+  "key": "${row-variant-id}"
+  "rows":
+  - null
+  - "name": "nenKAX.0000"
+    "aliases":
+    - "総数"
+  - "name": "nenKAX.0001"
+    "aliases":
+    - "0歳"
+  - "name": "nenKAX.0002"
+    "aliases":
+    - "1歳"
+  - "name": "nenKAX.0003"
+    "aliases":
+    - "2歳"
+  - "name": "nenKAX.0004"
+    "aliases":
+    - "3歳"
+  - "name": "nenKAX.0005"
+    "aliases":
+    - "4歳"
+  - "name": "nenKAX.0006"
+    "aliases":
+    - "5歳"
+  - "name": "nenKAX.0007"
+    "aliases":
+    - "6歳"
+  - "name": "nenKAX.0008"
+    "aliases":
+    - "7歳"
+  - "name": "nenKAX.0009"
+    "aliases":
+    - "8歳"
+  - "name": "nenKAX.0010"
+    "aliases":
+    - "9歳"
+  - "name": "nenKAX.0011"
+    "aliases":
+    - "10歳"
+  - "name": "nenKAX.0012"
+    "aliases":
+    - "11歳"
+  - "name": "nenKAX.0013"
+    "aliases":
+    - "12歳"
+  - "name": "nenKAX.0014"
+    "aliases":
+    - "13歳"
+  - "name": "nenKAX.0015"
+    "aliases":
+    - "14歳"
+  - "name": "nenKAX.0016"
+    "aliases":
+    - "15歳"
+  - "name": "nenKAX.0017"
+    "aliases":
+    - "16歳"
+  - "name": "nenKAX.0018"
+    "aliases":
+    - "17歳"
+  - "name": "nenKAX.0019"
+    "aliases":
+    - "18歳"
+  - "name": "nenKAX.0020"
+    "aliases":
+    - "19歳"
+  - "name": "nenKAX.0021"
+    "aliases":
+    - "20歳"
+  - "name": "nenKAX.0022"
+    "aliases":
+    - "21歳"
+  - "name": "nenKAX.0023"
+    "aliases":
+    - "22歳"
+  - "name": "nenKAX.0024"
+    "aliases":
+    - "23歳"
+  - "name": "nenKAX.0025"
+    "aliases":
+    - "24歳"
+  - "name": "nenKAX.0026"
+    "aliases":
+    - "25歳"
+  - "name": "nenKAX.0027"
+    "aliases":
+    - "26歳"
+  - "name": "nenKAX.0028"
+    "aliases":
+    - "27歳"
+  - "name": "nenKAX.0029"
+    "aliases":
+    - "28歳"
+  - "name": "nenKAX.0030"
+    "aliases":
+    - "29歳"
+  - "name": "nenKAX.0031"
+    "aliases":
+    - "30歳"
+  - "name": "nenKAX.0032"
+    "aliases":
+    - "31歳"
+  - "name": "nenKAX.0033"
+    "aliases":
+    - "32歳"
+  - "name": "nenKAX.0034"
+    "aliases":
+    - "33歳"
+  - "name": "nenKAX.0035"
+    "aliases":
+    - "34歳"
+  - "name": "nenKAX.0036"
+    "aliases":
+    - "35歳"
+  - "name": "nenKAX.0037"
+    "aliases":
+    - "36歳"
+  - "name": "nenKAX.0038"
+    "aliases":
+    - "37歳"
+  - "name": "nenKAX.0039"
+    "aliases":
+    - "38歳"
+  - "name": "nenKAX.0040"
+    "aliases":
+    - "39歳"
+  - "name": "nenKAX.0041"
+    "aliases":
+    - "40歳"
+  - "name": "nenKAX.0042"
+    "aliases":
+    - "41歳"
+  - "name": "nenKAX.0043"
+    "aliases":
+    - "42歳"
+  - "name": "nenKAX.0044"
+    "aliases":
+    - "43歳"
+  - "name": "nenKAX.0045"
+    "aliases":
+    - "44歳"
+  - "name": "nenKAX.0046"
+    "aliases":
+    - "45歳"
+  - "name": "nenKAX.0047"
+    "aliases":
+    - "46歳"
+  - "name": "nenKAX.0048"
+    "aliases":
+    - "47歳"
+  - "name": "nenKAX.0049"
+    "aliases":
+    - "48歳"
+  - "name": "nenKAX.0050"
+    "aliases":
+    - "49歳"
+  - "name": "nenKAX.0051"
+    "aliases":
+    - "50歳"
+  - "name": "nenKAX.0052"
+    "aliases":
+    - "51歳"
+  - "name": "nenKAX.0053"
+    "aliases":
+    - "52歳"
+  - "name": "nenKAX.0054"
+    "aliases":
+    - "53歳"
+  - "name": "nenKAX.0055"
+    "aliases":
+    - "54歳"
+  - "name": "nenKAX.0056"
+    "aliases":
+    - "55歳"
+  - "name": "nenKAX.0057"
+    "aliases":
+    - "56歳"
+  - "name": "nenKAX.0058"
+    "aliases":
+    - "57歳"
+  - "name": "nenKAX.0059"
+    "aliases":
+    - "58歳"
+  - "name": "nenKAX.0060"
+    "aliases":
+    - "59歳"
+  - "name": "nenKAX.0061"
+    "aliases":
+    - "60歳"
+  - "name": "nenKAX.0062"
+    "aliases":
+    - "61歳"
+  - "name": "nenKAX.0063"
+    "aliases":
+    - "62歳"
+  - "name": "nenKAX.0064"
+    "aliases":
+    - "63歳"
+  - "name": "nenKAX.0065"
+    "aliases":
+    - "64歳"
+  - "name": "nenKAX.0066"
+    "aliases":
+    - "65歳"
+  - "name": "nenKAX.0067"
+    "aliases":
+    - "66歳"
+  - "name": "nenKAX.0068"
+    "aliases":
+    - "67歳"
+  - "name": "nenKAX.0069"
+    "aliases":
+    - "68歳"
+  - "name": "nenKAX.0070"
+    "aliases":
+    - "69歳"
+  - "name": "nenKAX.0071"
+    "aliases":
+    - "70歳"
+  - "name": "nenKAX.0072"
+    "aliases":
+    - "71歳"
+  - "name": "nenKAX.0073"
+    "aliases":
+    - "72歳"
+  - "name": "nenKAX.0074"
+    "aliases":
+    - "73歳"
+  - "name": "nenKAX.0075"
+    "aliases":
+    - "74歳"
+  - "name": "nenKAX.0076"
+    "aliases":
+    - "75歳"
+  - "name": "nenKAX.0077"
+    "aliases":
+    - "76歳"
+  - "name": "nenKAX.0078"
+    "aliases":
+    - "77歳"
+  - "name": "nenKAX.0079"
+    "aliases":
+    - "78歳"
+  - "name": "nenKAX.0080"
+    "aliases":
+    - "79歳"
+  - "name": "nenKAX.0081"
+    "aliases":
+    - "80歳"
+  - "name": "nenKAX.0082"
+    "aliases":
+    - "81歳"
+  - "name": "nenKAX.0083"
+    "aliases":
+    - "82歳"
+  - "name": "nenKAX.0084"
+    "aliases":
+    - "83歳"
+  - "name": "nenKAX.0085"
+    "aliases":
+    - "84歳"
+  - "name": "nenKAX.0086"
+    "aliases":
+    - "85歳"
+  - "name": "nenKAX.0087"
+    "aliases":
+    - "86歳"
+  - "name": "nenKAX.0088"
+    "aliases":
+    - "87歳"
+  - "name": "nenKAX.0089"
+    "aliases":
+    - "88歳"
+  - "name": "nenKAX.0090"
+    "aliases":
+    - "89歳"
+  - "name": "nenKAX.0091"
+    "aliases":
+    - "90歳"
+  - "name": "nenKAX.0092"
+    "aliases":
+    - "91歳"
+  - "name": "nenKAX.0093"
+    "aliases":
+    - "92歳"
+  - "name": "nenKAX.0094"
+    "aliases":
+    - "93歳"
+  - "name": "nenKAX.0095"
+    "aliases":
+    - "94歳"
+  - "name": "nenKAX.0096"
+    "aliases":
+    - "95歳"
+  - "name": "nenKAX.0097"
+    "aliases":
+    - "96歳"
+  - "name": "nenKAX.0098"
+    "aliases":
+    - "97歳"
+  - "name": "nenKAX.0099"
+    "aliases":
+    - "98歳"
+  - "name": "nenKAX.0100"
+    "aliases":
+    - "99歳"
+  - "name": "nenKAX.0101"
+    "aliases":
+    - "100歳"
+  - "name": "nenKAX.0102"
+    "aliases":
+    - "101歳"
+  - "name": "nenKAX.0103"
+    "aliases":
+    - "102歳"
+  - "name": "nenKAX.0104"
+    "aliases":
+    - "103歳"
+  - "name": "nenKAX.0105"
+    "aliases":
+    - "104歳"
+  - "name": "nenKAX.0106"
+    "aliases":
+    - "105歳"
+  - "name": "nenKAX.0107"
+    "aliases":
+    - "106歳"
+  - "name": "nenKAX.0108"
+    "aliases":
+    - "107歳"
+  - "name": "nenKAX.0109"
+    "aliases":
+    - "108歳"
+  - "name": "nenKAX.0110"
+    "aliases":
+    - "109歳"
+  - "name": "nenKAX.0111"
+    "aliases":
+    - "110歳以上"
+  - "name": "nenKAX.0112"
+    "aliases":
+    - "年齢「不詳」"
 "columns":
 - "name": "※大項目"
   "n": 1
@@ -57,7 +400,7 @@
     "see":
     - "http://www.soumu.go.jp/denshijiti/code.html"
     - "http://www.soumu.go.jp/main_content/000137948.pdf"
-- "name": "variable-id"
+- "name": "row-variant-id"
   "type": "str"
   "dataType": "qualitative"
 - "name": "index-depth"

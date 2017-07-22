@@ -68,6 +68,12 @@ class TableSourceConfig(ConfigBase):
     def quantityColumns(self):
         return [x for x in self.column_configs if x.is_quantitative()]
 
+    def is_simple(self):
+        return self.args["type"] == "simpleTable"
+
+    def is_stacked(self):
+        return self.args["type"] == "stackedTable"
+
     @property
     def startIndex(self):
         return self.args.get("startIndex", 0)
@@ -75,6 +81,10 @@ class TableSourceConfig(ConfigBase):
     @property
     def columns(self):
         return [x.name for x in self.column_configs]
+
+    @property
+    def stacked(self):
+        return StackedConfig(self, self.args.get("stacked", {}))
 
 
 class TableColumnConfig:
@@ -141,3 +151,41 @@ class TableColumnConfig:
                 yield self.config.evaluate(value)
             else:
                 yield value
+
+
+class StackedConfig:
+    def __init__(self, config, stacked):
+        self.config = config
+        self.stacked = stacked
+
+    def __len__(self):
+        return len(self.stacked.get("rows", []))
+
+    @property
+    def rows(self):
+        rows = self.stacked.get("rows", [])
+        return [TableRowConfig(self, x) if x else None for x in rows]
+
+
+class TableRowConfig:
+    def __init__(self, config, row_config):
+        self.config = config
+        self.row_config = row_config
+
+    @property
+    def name(self):
+        return self.column_config["name"]
+
+    @property
+    def aliases(self):
+        return self.column_config.get("aliases", [])
+
+    @property
+    def display_name(self):
+        if self.aliases:
+            return self.aliases[0]
+        return self.name
+
+    @property
+    def unit(self):
+        return self.column_config.get("unit")

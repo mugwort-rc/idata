@@ -1,6 +1,7 @@
 import pandas
 
 from .base import Source
+from .base import Proxy
 from .base import Record
 
 
@@ -11,6 +12,33 @@ class TableSource(Source):
 
     def record(self, index):
         series = self.frame[index]
+        # TODO: TableRecord.sourceExpr()
+        return TableRecord(series, None, None)
+
+
+class StackedTableSource(TableSource):
+    def stackedCount(self):
+        rows = self.config.stacked.rows
+        rowCount = len(rows)
+        assert len(self.frame.index) % rowCount == 0
+        return len(self.frame.index) // rowCount
+
+    def stacked(self, index):
+        assert index < self.stackedCount()
+        rows = self.config.stacked.rows
+        rowCount = len(rows)
+        filter = [i + (rowCount * index) for i,x in enumerate(rows) if x]
+        return StackedTable(self, index, self.frame[self.frame.index.isin(filter)])
+
+
+class StackedTable(Proxy):
+    def __init__(self, source, index, frame):
+        self.source = source
+        self.index = index
+        self.frame = frame
+
+    def record(self, index):
+        series = self.frame[frame.index[index]]
         # TODO: TableRecord.sourceExpr()
         return TableRecord(series, None, None)
 

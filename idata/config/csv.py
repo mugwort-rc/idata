@@ -1,17 +1,17 @@
 import csv
 
 from .base import TableSourceConfig
-from ..source.table import TableSource
+from ..source.table import TableSource, StackedTableSource
 
 
 class CSVTableSourceConfig(TableSourceConfig):
     def load(self, path, encoding="utf-8"):
         if hasattr(path, "read"):
-            return self._load_simple(path)
+            return self._load(path)
         with open(path, "r", encoding=encoding) as fp:
-            return self._load_simple(fp)
+            return self._load(fp)
 
-    def _load_simple(self, fp):
+    def _load(self, fp):
         reader = csv.reader(fp)
         for i, row in enumerate(reader):
             if i in self.prepare_assertions:
@@ -28,7 +28,11 @@ class CSVTableSourceConfig(TableSourceConfig):
         if exclude == [0]:
             df = df.drop(0, axis=1)
         df.columns = self.columns
-        return TableSource(self, df)
+        if self.is_simple():
+            return TableSource(self, df)
+        elif self.is_stacked():
+            return StackedTableSource(self, df)
+        raise NotImplementedError
 
     def _raw_index_exclude(self, row):
         columns = self._raw_index_columns()

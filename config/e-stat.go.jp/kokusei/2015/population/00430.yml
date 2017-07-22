@@ -21,6 +21,79 @@
   "data":
   - "sha1:57bd6893eb720f4dc534b1f6c297ea47b7a34324"
 "startIndex": 13
+"stacked":
+  "key": "${row-variant-id}"
+  "rows":
+  - null
+  - "name": "nen5BX.0000"
+    "aliases":
+    - "総数（年齢）"
+  - "name": "nen5BX.0001"
+    "aliases":
+    - "　0～4歳"
+  - "name": "nen5BX.0002"
+    "aliases":
+    - "　5～9歳"
+  - "name": "nen5BX.0003"
+    "aliases":
+    - "　10～14歳"
+  - "name": "nen5BX.0004"
+    "aliases":
+    - "　15～19歳"
+  - "name": "nen5BX.0005"
+    "aliases":
+    - "　20～24歳"
+  - "name": "nen5BX.0006"
+    "aliases":
+    - "　25～29歳"
+  - "name": "nen5BX.0007"
+    "aliases":
+    - "　30～34歳"
+  - "name": "nen5BX.0008"
+    "aliases":
+    - "　35～39歳"
+  - "name": "nen5BX.0009"
+    "aliases":
+    - "　40～44歳"
+  - "name": "nen5BX.0010"
+    "aliases":
+    - "　45～49歳"
+  - "name": "nen5BX.0011"
+    "aliases":
+    - "　50～54歳"
+  - "name": "nen5BX.0012"
+    "aliases":
+    - "　55～59歳"
+  - "name": "nen5BX.0013"
+    "aliases":
+    - "　60～64歳"
+  - "name": "nen5BX.0014"
+    "aliases":
+    - "　65～69歳"
+  - "name": "nen5BX.0015"
+    "aliases":
+    - "　70～74歳"
+  - "name": "nen5BX.0016"
+    "aliases":
+    - "　75～79歳"
+  - "name": "nen5BX.0017"
+    "aliases":
+    - "　80～84歳"
+  - "name": "nen5BX.0018"
+    "aliases":
+    - "　85～89歳"
+  - "name": "nen5BX.0019"
+    "aliases":
+    - "　90～94歳"
+  - "name": "nen5BX.0020"
+    "aliases":
+    - "　95～99歳"
+  - "name": "nen5BX.0021"
+    "aliases":
+    - "　100歳以上"
+  - "name": "nen5BX.0022"
+    "aliases":
+    - "　年齢「不詳」"
 "columns":
 - "name": "※大項目"
   "n": 1
@@ -57,7 +130,7 @@
     "see":
     - "http://www.soumu.go.jp/denshijiti/code.html"
     - "http://www.soumu.go.jp/main_content/000137948.pdf"
-- "name": "variable-id"
+- "name": "row-variant-id"
   "type": "str"
   "dataType": "qualitative"
 - "name": "index-depth"

@@ -4,6 +4,10 @@ class Source:
     pass
 
 
+class Proxy:
+    pass
+
+
 class Record:
     """
     like pandas.Series object

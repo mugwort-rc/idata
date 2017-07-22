@@ -13,7 +13,7 @@
 "notes":
 - "1) 日本人・外国人の別「不詳」を含む。"
 - "2) 配偶関係「不詳」を除いて算出。"
-"type": "simpleTable"
+"type": "stackedTable"
 "mimeType": "text/csv"
 "hints":
 - "type": "filename"
@@ -22,6 +22,80 @@
   "data":
   - "sha1:c65cd700fb37a5a614b54fa0275ab68362afc3b9"
 "startIndex": 14
+"stacked":
+  "key": "row-variant-id"
+  "rows":
+  - null
+  - "name": "nen5F.0000"
+    "aliases":
+    - "総数（15歳以上年齢）"
+  - "name": "nen5F.0001"
+    "aliases":
+    - "　15～19歳"
+  - "name": "nen5F.0002"
+    "aliases":
+    - "　20～24歳"
+  - "name": "nen5F.0003"
+    "aliases":
+    - "　25～29歳"
+  - "name": "nen5F.0004"
+    "aliases":
+    - "　30～34歳"
+  - "name": "nen5F.0005"
+    "aliases":
+    - "　35～39歳"
+  - "name": "nen5F.0006"
+    "aliases":
+    - "　40～44歳"
+  - "name": "nen5F.0007"
+    "aliases":
+    - "　45～49歳"
+  - "name": "nen5F.0008"
+    "aliases":
+    - "　50～54歳"
+  - "name": "nen5F.0009"
+    "aliases":
+    - "　55～59歳"
+  - "name": "nen5F.0010"
+    "aliases":
+    - "　60～64歳"
+  - "name": "nen5F.0011"
+    "aliases":
+    - "　65～69歳"
+  - "name": "nen5F.0012"
+    "aliases":
+    - "　70～74歳"
+  - "name": "nen5F.0013"
+    "aliases":
+    - "　75～79歳"
+  - "name": "nen5F.0014"
+    "aliases":
+    - "　80～84歳"
+  - "name": "nen5F.0015"
+    "aliases":
+    - "　85～89歳"
+  - "name": "nen5F.0016"
+    "aliases":
+    - "　90～94歳"
+  - "name": "nen5F.0017"
+    "aliases":
+    - "　95～99歳"
+  - "name": "nen5F.0018"
+    "aliases":
+    - "　100歳以上"
+  - "name": "nenH.0001"
+    "aliases":
+    - "　平均年齢"
+    "unit": "%"
+  - "name": "nen653.0001"
+    "aliases":
+    - "　（再掲）65歳以上"
+  - "name": "nen653.0002"
+    "aliases":
+    - "　　（再掲）75歳以上"
+  - "name": "nen653.0003"
+    "aliases":
+    - "　　　（再掲）85歳以上"
 "columns":
 - "name": "※大項目"
   "n": 1
@@ -58,7 +132,7 @@
     "see":
     - "http://www.soumu.go.jp/denshijiti/code.html"
     - "http://www.soumu.go.jp/main_content/000137948.pdf"
-- "name": "variable-id"
+- "name": "row-variant-id"
   "type": "str"
   "dataType": "qualitative"
 - "name": "index-depth"

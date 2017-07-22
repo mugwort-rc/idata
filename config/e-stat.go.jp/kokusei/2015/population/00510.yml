@@ -13,7 +13,7 @@
 "notes":
 - "1) 日本人・外国人の別「不詳」を含む。"
 - "2) 配偶関係「不詳」を除いて算出。"
-"type": "simpleTable"
+"type": "stackedTable"
 "mimeType": "text/csv"
 "hints":
 - "type": "filename"
@@ -22,6 +22,283 @@
   "data":
   - "sha1:c65cd700fb37a5a614b54fa0275ab68362afc3b9"
 "startIndex": 14
+"stacked":
+  "key": "${row-variant-id}"
+  "rows":
+  - null
+  - "name": "nenKF.0000"
+    "aliases":
+    - "総数（15歳以上年齢）"
+  - "name": "nenKF.0001"
+    "aliases":
+    - "　15歳"
+  - "name": "nenKF.0002"
+    "aliases":
+    - "　16歳"
+  - "name": "nenKF.0003"
+    "aliases":
+    - "　17歳"
+  - "name": "nenKF.0004"
+    "aliases":
+    - "　18歳"
+  - "name": "nenKF.0005"
+    "aliases":
+    - "　19歳"
+  - "name": "nenKF.0006"
+    "aliases":
+    - "　20歳"
+  - "name": "nenKF.0007"
+    "aliases":
+    - "　21歳"
+  - "name": "nenKF.0008"
+    "aliases":
+    - "　22歳"
+  - "name": "nenKF.0009"
+    "aliases":
+    - "　23歳"
+  - "name": "nenKF.0010"
+    "aliases":
+    - "　24歳"
+  - "name": "nenKF.0011"
+    "aliases":
+    - "　25歳"
+  - "name": "nenKF.0012"
+    "aliases":
+    - "　26歳"
+  - "name": "nenKF.0013"
+    "aliases":
+    - "　27歳"
+  - "name": "nenKF.0014"
+    "aliases":
+    - "　28歳"
+  - "name": "nenKF.0015"
+    "aliases":
+    - "　29歳"
+  - "name": "nenKF.0016"
+    "aliases":
+    - "　30歳"
+  - "name": "nenKF.0017"
+    "aliases":
+    - "　31歳"
+  - "name": "nenKF.0018"
+    "aliases":
+    - "　32歳"
+  - "name": "nenKF.0019"
+    "aliases":
+    - "　33歳"
+  - "name": "nenKF.0020"
+    "aliases":
+    - "　34歳"
+  - "name": "nenKF.0021"
+    "aliases":
+    - "　35歳"
+  - "name": "nenKF.0022"
+    "aliases":
+    - "　36歳"
+  - "name": "nenKF.0023"
+    "aliases":
+    - "　37歳"
+  - "name": "nenKF.0024"
+    "aliases":
+    - "　38歳"
+  - "name": "nenKF.0025"
+    "aliases":
+    - "　39歳"
+  - "name": "nenKF.0026"
+    "aliases":
+    - "　40歳"
+  - "name": "nenKF.0027"
+    "aliases":
+    - "　41歳"
+  - "name": "nenKF.0028"
+    "aliases":
+    - "　42歳"
+  - "name": "nenKF.0029"
+    "aliases":
+    - "　43歳"
+  - "name": "nenKF.0030"
+    "aliases":
+    - "　44歳"
+  - "name": "nenKF.0031"
+    "aliases":
+    - "　45歳"
+  - "name": "nenKF.0032"
+    "aliases":
+    - "　46歳"
+  - "name": "nenKF.0033"
+    "aliases":
+    - "　47歳"
+  - "name": "nenKF.0034"
+    "aliases":
+    - "　48歳"
+  - "name": "nenKF.0035"
+    "aliases":
+    - "　49歳"
+  - "name": "nenKF.0036"
+    "aliases":
+    - "　50歳"
+  - "name": "nenKF.0037"
+    "aliases":
+    - "　51歳"
+  - "name": "nenKF.0038"
+    "aliases":
+    - "　52歳"
+  - "name": "nenKF.0039"
+    "aliases":
+    - "　53歳"
+  - "name": "nenKF.0040"
+    "aliases":
+    - "　54歳"
+  - "name": "nenKF.0041"
+    "aliases":
+    - "　55歳"
+  - "name": "nenKF.0042"
+    "aliases":
+    - "　56歳"
+  - "name": "nenKF.0043"
+    "aliases":
+    - "　57歳"
+  - "name": "nenKF.0044"
+    "aliases":
+    - "　58歳"
+  - "name": "nenKF.0045"
+    "aliases":
+    - "　59歳"
+  - "name": "nenKF.0046"
+    "aliases":
+    - "　60歳"
+  - "name": "nenKF.0047"
+    "aliases":
+    - "　61歳"
+  - "name": "nenKF.0048"
+    "aliases":
+    - "　62歳"
+  - "name": "nenKF.0049"
+    "aliases":
+    - "　63歳"
+  - "name": "nenKF.0050"
+    "aliases":
+    - "　64歳"
+  - "name": "nenKF.0051"
+    "aliases":
+    - "　65歳"
+  - "name": "nenKF.0052"
+    "aliases":
+    - "　66歳"
+  - "name": "nenKF.0053"
+    "aliases":
+    - "　67歳"
+  - "name": "nenKF.0054"
+    "aliases":
+    - "　68歳"
+  - "name": "nenKF.0055"
+    "aliases":
+    - "　69歳"
+  - "name": "nenKF.0056"
+    "aliases":
+    - "　70歳"
+  - "name": "nenKF.0057"
+    "aliases":
+    - "　71歳"
+  - "name": "nenKF.0058"
+    "aliases":
+    - "　72歳"
+  - "name": "nenKF.0059"
+    "aliases":
+    - "　73歳"
+  - "name": "nenKF.0060"
+    "aliases":
+    - "　74歳"
+  - "name": "nenKF.0061"
+    "aliases":
+    - "　75歳"
+  - "name": "nenKF.0062"
+    "aliases":
+    - "　76歳"
+  - "name": "nenKF.0063"
+    "aliases":
+    - "　77歳"
+  - "name": "nenKF.0064"
+    "aliases":
+    - "　78歳"
+  - "name": "nenKF.0065"
+    "aliases":
+    - "　79歳"
+  - "name": "nenKF.0066"
+    "aliases":
+    - "　80歳"
+  - "name": "nenKF.0067"
+    "aliases":
+    - "　81歳"
+  - "name": "nenKF.0068"
+    "aliases":
+    - "　82歳"
+  - "name": "nenKF.0069"
+    "aliases":
+    - "　83歳"
+  - "name": "nenKF.0070"
+    "aliases":
+    - "　84歳"
+  - "name": "nenKF.0071"
+    "aliases":
+    - "　85歳"
+  - "name": "nenKF.0072"
+    "aliases":
+    - "　86歳"
+  - "name": "nenKF.0073"
+    "aliases":
+    - "　87歳"
+  - "name": "nenKF.0074"
+    "aliases":
+    - "　88歳"
+  - "name": "nenKF.0075"
+    "aliases":
+    - "　89歳"
+  - "name": "nenKF.0076"
+    "aliases":
+    - "　90歳"
+  - "name": "nenKF.0077"
+    "aliases":
+    - "　91歳"
+  - "name": "nenKF.0078"
+    "aliases":
+    - "　92歳"
+  - "name": "nenKF.0079"
+    "aliases":
+    - "　93歳"
+  - "name": "nenKF.0080"
+    "aliases":
+    - "　94歳"
+  - "name": "nenKF.0081"
+    "aliases":
+    - "　95歳"
+  - "name": "nenKF.0082"
+    "aliases":
+    - "　96歳"
+  - "name": "nenKF.0083"
+    "aliases":
+    - "　97歳"
+  - "name": "nenKF.0084"
+    "aliases":
+    - "　98歳"
+  - "name": "nenKF.0085"
+    "aliases":
+    - "　99歳"
+  - "name": "nenKF.0086"
+    "aliases":
+    - "　100歳以上"
+  - "name": "nenH.0001"
+    "aliases":
+    - "　平均年齢"
+  - "name": "nen653.0001"
+    "aliases":
+    - "　（再掲）65歳以上"
+  - "name": "nen653.0002"
+    "aliases":
+    - "　　（再掲）75歳以上"
+  - "name": "nen653.0003"
+    "aliases":
+    - "　　　（再掲）85歳以上"
 "columns":
 - "name": "※大項目"
   "n": 1
@@ -58,7 +335,7 @@
     "see":
     - "http://www.soumu.go.jp/denshijiti/code.html"
     - "http://www.soumu.go.jp/main_content/000137948.pdf"
-- "name": "variable-id"
+- "name": "row-variant-id"
   "type": "str"
   "dataType": "qualitative"
 - "name": "index-depth"
