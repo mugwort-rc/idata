@@ -16,7 +16,7 @@ def load_yaml(fp):
 def save(data, fp):
     def _save(data, fp):
         kwargs = dict(allow_unicode=True, default_flow_style=False)
-        return yaml.save(data, fp, **kwargs)
+        return fp.write(yaml.dump(data, **kwargs))
 
     if isinstance(fp, str):
         with open(fp, "w", encoding="utf-8") as fp:

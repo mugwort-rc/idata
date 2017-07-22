@@ -1,0 +1,256 @@
+"survey":
+  "country": "jp"
+  "name": "国勢調査"
+  "datetime": "2015-10-01T00:00:00+0900"
+"title": "第4-3表　出生の月(4区分)，年齢(各歳)，男女別人口(総数及び日本人)"
+"title:en": "Table 4-3. Population (Total and Japanese Population), by Month of Birth (4 Groups), Age (Single Years) and Sex"
+"creator":
+  "name": "総務省統計局"
+  "homepage": "http://www.stat.go.jp/"
+"source":
+- "url": "http://www.stat.go.jp/data/kokusei/2015/"
+  "last_visit": "2017-07-20"
+"notes":
+- "1) 日本人・外国人の別「不詳」を含む。"
+"type": "simpleTable"
+"mimeType": "text/csv"
+"hints":
+- "type": "filename"
+  "regex": "00430_\\{2}.csv"
+- "type": "digest"
+  "data":
+  - "sha1:57bd6893eb720f4dc534b1f6c297ea47b7a34324"
+"startIndex": 13
+"columns":
+- "name": "※大項目"
+  "n": 1
+  "type": "str"
+  "dataType": "qualitative"
+  "regex": "(\\d|[abcd])"
+  "enum":
+    "map":
+      "01": "koku2A.0000  総数（国籍） 1)"
+      "01": "koku2A.0001  日本人"
+- "name": "地域コード"
+  "type": "int"
+  "dataType": "qualitative"
+  "nullable": true
+  "regex": "(\\d{2})(\\d{3})"
+  "see":
+  - "http://www.soumu.go.jp/denshijiti/code.html"
+  - "http://www.soumu.go.jp/main_content/000137948.pdf"
+- "name": "地域識別コード"
+  "type": "alnum"
+  "dataType": "qualitative"
+  "regex": "(\\d|[abcd])"
+  "enum":
+    "map":
+      "0": "特別区及び指定都市の区"
+      "1": "指定都市"
+      "2": "市"
+      "3": "町村"
+      "9": "旧市区町村"
+      "a": "都道府県"
+      "b": "市部/区部"
+      "c": "支庁所管区域"
+      "d": "人口集中地区"
+    "see":
+    - "http://www.soumu.go.jp/denshijiti/code.html"
+    - "http://www.soumu.go.jp/main_content/000137948.pdf"
+- "name": "variable-id"
+  "type": "str"
+  "dataType": "qualitative"
+- "name": "index-depth"
+  "type": "int"
+  "dataType": "qualitative"
+- "name": "name"
+  "type": "str"
+  "dataType": "qualitative"
+- "name": "danjo.0000,tsu.0000"
+  "names":
+  - "danjo.0000"
+  - "tsu.0000"
+  "aliases":
+  - "総数（出生の月） "
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0000,tsu.0001"
+  "names":
+  - "danjo.0000"
+  - "tsu.0001"
+  "aliases":
+  - "1月～3月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0000,tsu.0002"
+  "names":
+  - "danjo.0000"
+  - "tsu.0002"
+  "aliases":
+  - "4月～6月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0000,tsu.0003"
+  "names":
+  - "danjo.0000"
+  - "tsu.0003"
+  "aliases":
+  - "7月～9月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0000,tsu.0004"
+  "names":
+  - "danjo.0000"
+  - "tsu.0004"
+  "aliases":
+  - "10月～12月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0000,tsu.0005"
+  "names":
+  - "danjo.0000"
+  - "tsu.0005"
+  "aliases":
+  - "出生の月「不詳」"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0001,tsu.0000"
+  "names":
+  - "danjo.0001"
+  - "tsu.0000"
+  "aliases":
+  - "男 - 総数（出生の月） "
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0001,tsu.0001"
+  "names":
+  - "danjo.0001"
+  - "tsu.0001"
+  "aliases":
+  - "男 - 1月～3月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0001,tsu.0002"
+  "names":
+  - "danjo.0001"
+  - "tsu.0002"
+  "aliases":
+  - "男 - 4月～6月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0001,tsu.0003"
+  "names":
+  - "danjo.0001"
+  - "tsu.0003"
+  "aliases":
+  - "男 - 7月～9月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0001,tsu.0004"
+  "names":
+  - "danjo.0001"
+  - "tsu.0004"
+  "aliases":
+  - "男 - 10月～12月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0001,tsu.0005"
+  "names":
+  - "danjo.0001"
+  - "tsu.0005"
+  "aliases":
+  - "男 - 出生の月「不詳」"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0002,tsu.0000"
+  "names":
+  - "danjo.0002"
+  - "tsu.0000"
+  "aliases":
+  - "女 - 総数（出生の月） "
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0002,tsu.0001"
+  "names":
+  - "danjo.0002"
+  - "tsu.0001"
+  "aliases":
+  - "女 - 1月～3月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0002,tsu.0002"
+  "names":
+  - "danjo.0002"
+  - "tsu.0002"
+  "aliases":
+  - "女 - 4月～6月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0002,tsu.0003"
+  "names":
+  - "danjo.0002"
+  - "tsu.0003"
+  "aliases":
+  - "女 - 7月～9月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0002,tsu.0004"
+  "names":
+  - "danjo.0002"
+  - "tsu.0004"
+  "aliases":
+  - "女 - 10月～12月"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+- "name": "danjo.0002,tsu.0005"
+  "names":
+  - "danjo.0002"
+  - "tsu.0005"
+  "aliases":
+  - "女 - 出生の月「不詳」"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "人"
+"asserts":
+  "prepare":
+  - "type": "row"
+    "row": 0
+    "f": "eq"
+    "args":
+      "source": 1
+      "value": "平成27年国勢調査人口等基本集計（総務省統計局）"
+  - "type": "row"
+    "row": 1
+    "f": "in"
+    "args":
+      "value": "第4-3表"
+      "source": 7
+  - "type": "row"
+    "row": 7
+    "f": "eq"
+    "args":
+      "source": "7:_1+18"
+      "value": "$config@columns[6:]@names[0]"
+  - "type": "row"
+    "row": 9
+    "f": "eq"
+    "args":
+      "source": "7:_1+18"
+      "value": "$config@columns[6:]@names[1]"

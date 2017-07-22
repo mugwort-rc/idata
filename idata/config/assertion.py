@@ -1,3 +1,5 @@
+import re
+
 from . import expression
 
 
@@ -16,6 +18,8 @@ class RowAssertion(AssertionBase):
             return self.assertEqual(data)
         elif self.type == "in":
             return self.assertIn(data)
+        elif self.type == "match":
+            return self.assertMatch(data)
         raise NotImplementedError
 
     def error_message(self, data):
@@ -25,6 +29,9 @@ class RowAssertion(AssertionBase):
         elif self.type == "in":
             source = self.get(self.args_source, data)
             return "{} not in {}".format(repr(self.args_value), source)
+        elif self.type == "match":
+            source = self.get(self.args_source, data)
+            return "{} does not match {}".format(source, repr(self.args_value))
         raise NotImplementedError
 
     def assertEqual(self, data):
@@ -36,6 +43,11 @@ class RowAssertion(AssertionBase):
         value = self.args_value
         source = self.get(self.args_source, data)
         return value in source
+
+    def assertMatch(self, data):
+        value = self.args_value
+        source = self.get(self.args_source, data)
+        return bool(re.match(value, source))
 
     def get(self, item, data):
         if isinstance(item, int):

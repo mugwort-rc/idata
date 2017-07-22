@@ -25,5 +25,11 @@ class CSVTableSourceConfig(TableSourceConfig):
         # TODO: StackedTableSource
         import pandas
         df = pandas.DataFrame.from_records(reader, exclude=exclude)
+        if exclude == [0]:
+            df = df.drop(0, axis=1)
         df.columns = self.columns
         return TableSource(self, df)
+
+    def _raw_index_exclude(self, row):
+        columns = self._raw_index_columns()
+        return [x for x in range(len(row)) if x not in columns]

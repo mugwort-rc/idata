@@ -1,9 +1,8 @@
 import re
 from collections import defaultdict
 
-from xlsxwriter.utility import xl_cell_to_rowcol
-
 from . import assertion
+from . import excel
 from . import expression
 from . import type
 from ..utils.slice import make_slice_list
@@ -53,10 +52,6 @@ class TableSourceConfig(ConfigBase):
             tmp.append(current)
             current += 1
         return tmp
-
-    def _raw_index_exclude(self, row):
-        columns = self._raw_index_columns()
-        return [x for x in range(len(row)) if x not in columns]
 
     def column(self, name):
         return self.columnByIndex(self.column_name2index[name])
@@ -117,7 +112,7 @@ class TableColumnConfig:
     def n(self):
         n = self.column_config.get("n")
         if isinstance(n, str):
-            _, n = xl_cell_to_rowcol("{}1".format(n))
+            n = excel.name_to_col(n)
             self.column_config["n"] = n
         return self.column_config.get("n")
 
