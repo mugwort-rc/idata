@@ -1,0 +1,123 @@
+"survey":
+  "country": "jp"
+  "name": "国勢調査"
+  "datetime": "2013-10-01T00:00:00+0900"
+"title": "第１表　居住世帯の有無(8区分)別住宅数及び住宅以外で人が居住する建物数―市区町村"
+"title:en": "Table 1.  Dwellings by Occupancy Status (8 Groups) and Occupied Buildings Other than Dwelling - Shi, Ku, Machi and Mura"
+"creator":
+  "name": "総務省統計局"
+  "homepage": "http://www.stat.go.jp/"
+"source":
+- "url": "http://www.stat.go.jp/data/jyutaku/2013/tyousake.htm"
+  "last_visit": "2017-07-20"
+"notes": []
+"type": "namedTable/simpleTable"
+"sheetName": "A002"
+"mimeType": "application/vnd.ms-excel"
+"hints":
+- "type": "filename"
+  "regex": "a002.xls"
+- "type": "digest"
+  "data":
+  - "sha1:bd1bf3457d8bc8e28d5aa29d44a481bf98a1ae4b"
+"startIndex": 16
+"columns":
+- "name": "id_0"
+  "type": "str"
+  "dataType": "qualitative"
+- "name": "id_1"
+  "type": "str"
+  "dataType": "qualitative"
+- "name": "name"
+  "n": 7
+  "type": "str"
+  "dataType": "qualitative"
+- "name": "name:en"
+  "type": "str"
+  "dataType": "qualitative"
+- "name": "col_00"
+  "aliases":
+  - "住宅総数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_01"
+  "aliases":
+  - "居住世帯あり 総数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_02"
+  "aliases":
+  - "居住世帯あり 同居世帯なし"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_03"
+  "aliases":
+  - "居住世帯あり 同居世帯あり"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_04"
+  "aliases":
+  - "居住世帯なし 総数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_05"
+  "aliases":
+  - "居住世帯なし 一時現在者のみ"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_06"
+  "aliases":
+  - "居住世帯なし 空き家 総数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_07"
+  "aliases":
+  - "居住世帯なし 空き家 二次的住宅"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_08"
+  "aliases":
+  - "居住世帯なし 空き家 賃貸用の住宅"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_09"
+  "aliases":
+  - "居住世帯なし 空き家 売却用の住宅"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_10"
+  "aliases":
+  - "居住世帯なし 空き家 その他の住宅"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_11"
+  "aliases":
+  - "居住世帯なし 建築中"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+- "name": "col_8"
+  "aliases":
+  - "住宅以外で人が居住する建物数"
+  "type": "int"
+  "dataType": "quantitative"
+  "unit": "戸"
+"asserts":
+  "prepare":
+  - "type": "row"
+    "row": 3
+    "f": "in"
+    "args":
+      "value": "第１表"
+      "source": 13

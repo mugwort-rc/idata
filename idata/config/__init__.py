@@ -3,13 +3,18 @@
 import yaml
 
 from . import csv
+from . import excel
 from .yaml_represent import *
 
 
 def load_yaml(fp):
+    if isinstance(fp, str):
+        fp = open(fp)
     data = yaml.load(fp)
     if data.get("mimeType") == "text/csv":
         return csv.CSVTableSourceConfig(**data)
+    elif data.get("mimeType") == "application/vnd.ms-excel":
+        return excel.ExcelTableSourceConfig(**data)
     raise NotImplementedError
 
 
