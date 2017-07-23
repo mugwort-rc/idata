@@ -65,7 +65,7 @@ db.search(["人口", "27年"])
 import idata.db
 db = idata.db.open("config/")
 db.detect_by_file("data/e-stat.go.jp/jyutaku/2013/city/13/a002.xls")
-# <Source: 住宅・土地統計調査:"第１表　居住世帯の有無(8区分)別住宅数及び住宅以外で人が居住する建物数―市区町村">
+# [<Source: 住宅・土地統計調査:"第１表　居住世帯の有無(8区分)別住宅数及び住宅以外で人が居住する建物数―市区町村">]
 ```
 
 ## PyQt5

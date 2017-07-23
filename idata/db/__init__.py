@@ -1,5 +1,6 @@
 import builtins
 import os
+from collections import defaultdict
 
 from .. import config
 from ..utils import digests
@@ -9,13 +10,13 @@ class Database:
     def __init__(self, path, configurations):
         self.path = path
         self.configurations = configurations
-        self.digests = {}
+        self.digests = defaultdict(list)
         self._init()
 
     def _init(self):
         for path, conf in self.configurations.items():
             for digest in conf.digests():
-                self.digests[digest] = conf
+                self.digests[digest].append(conf)
 
     def detect_by_file(self, path):
         def _detect_by_file(fp):
@@ -23,7 +24,7 @@ class Database:
             impl.calc(fp)
             digest = "sha1:{}".format(impl.hexdigest())
             if digest not in self.digests:
-                return None
+                return []
             return self.digests[digest]
         if hasattr(path, "read"):
             return _detect_by_file(path)
