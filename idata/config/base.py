@@ -79,6 +79,14 @@ class TableSourceConfig(ConfigBase):
         return "stackedTable" in self.args["type"]
 
     @property
+    def survey_name(self):
+        return self.args.get("survey", {}).get("name")
+
+    @property
+    def survey_title(self):
+        return self.args.get("title")
+
+    @property
     def startIndex(self):
         return self.args.get("startIndex", 0)
 
@@ -95,6 +103,12 @@ class TableColumnConfig:
     def __init__(self, config, column_config):
         self.config = config
         self.column_config = column_config
+
+    def __repr__(self):
+        title = self.config.survey_title
+        if len(title) > 15:
+            title = title[:12] + "..."
+        return '<Column: {}:{}:"{}">'.format(self.config.survey_name, title, self.display_name)
 
     def type(self):
         t = self.column_config.get("type")
