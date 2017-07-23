@@ -52,11 +52,20 @@ stdout:
 
 ### Search column
 
-```
+```python
 import idata.db
 db = idata.db.open("config/")
 db.search(["人口", "27年"])
-# [<Column: 国勢調査:人口等基本集計 第1表　...:"人口　平成27年">, <Column: 国勢調査:人口等基本集計 第1表　...:"平成22年～27年の人口増減数">, <Column: 国勢調査:人口等基本集計 第1表　...:"平成22年～27年の人口増減率（％）">]
+# [<Column: 国勢調査:"人口　平成27年">, <Column: 国勢調査:"平成22年～27年の人口増減数">, <Column: 国勢調査:"平成22年～27年の人口増減率（％）">]
+```
+
+### Detect by file
+
+```python
+import idata.db
+db = idata.db.open("config/")
+db.detect_by_file("data/e-stat.go.jp/jyutaku/2013/city/13/a002.xls")
+# <Source: 住宅・土地統計調査:"第１表　居住世帯の有無(8区分)別住宅数及び住宅以外で人が居住する建物数―市区町村">
 ```
 
 ## PyQt5

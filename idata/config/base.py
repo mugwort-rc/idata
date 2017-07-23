@@ -37,6 +37,9 @@ class TableSourceConfig(ConfigBase):
             a = assertion.RowAssertion(self, assert_config)
             self.prepare_assertions[assert_config["row"]].append(a)
 
+    def __repr__(self):
+        return '<Source: {}:"{}">'.format(self.survey_name, self.survey_title)
+
     def evaluate(self, expr):
         if expression.is_config_expr(expr):
             exprs = expr[len("$config@"):].split("@")
@@ -78,6 +81,13 @@ class TableSourceConfig(ConfigBase):
     def is_stacked(self):
         return "stackedTable" in self.args["type"]
 
+    def digests(self):
+        for hint in self.args.get("hints"):
+            if hint["type"] != "digest":
+                continue
+            for digest in hint["data"]:
+                yield digest
+
     @property
     def survey_name(self):
         return self.args.get("survey", {}).get("name")
@@ -105,10 +115,7 @@ class TableColumnConfig:
         self.column_config = column_config
 
     def __repr__(self):
-        title = self.config.survey_title
-        if len(title) > 15:
-            title = title[:12] + "..."
-        return '<Column: {}:{}:"{}">'.format(self.config.survey_name, title, self.display_name)
+        return '<Column: {}:"{}">'.format(self.config.survey_name, self.display_name)
 
     def type(self):
         t = self.column_config.get("type")

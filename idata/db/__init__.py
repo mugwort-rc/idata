@@ -1,12 +1,34 @@
+import builtins
 import os
 
 from .. import config
+from ..utils import digests
 
 
 class Database:
     def __init__(self, path, configurations):
         self.path = path
         self.configurations = configurations
+        self.digests = {}
+        self._init()
+
+    def _init(self):
+        for path, conf in self.configurations.items():
+            for digest in conf.digests():
+                self.digests[digest] = conf
+
+    def detect_by_file(self, path):
+        def _detect_by_file(fp):
+            impl = digests.DigestCalculator.sha1()
+            impl.calc(fp)
+            digest = "sha1:{}".format(impl.hexdigest())
+            if digest not in self.digests:
+                return None
+            return self.digests[digest]
+        if hasattr(path, "read"):
+            return _detect_by_file(path)
+        with builtins.open(path, "rb") as fp:
+            return _detect_by_file(fp)
 
     def search(self, words):
         if isinstance(words, str):
