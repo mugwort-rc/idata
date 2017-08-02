@@ -18,3 +18,12 @@ class DigestCalculator:
     @staticmethod
     def sha1():
         return DigestCalculator(hashlib.sha1())
+
+
+def sha1(fileobj):
+    if not hasattr(fileobj, "read"):
+        with open(fileobj, "rb") as fp:
+            return sha1(fp)
+    dc = DigestCalculator.sha1()
+    dc.calc(fileobj)
+    return dc.hexdigest()

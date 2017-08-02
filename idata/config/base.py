@@ -105,6 +105,10 @@ class TableSourceConfig(ConfigBase):
         return [x.name for x in self.column_configs]
 
     @property
+    def columns_size(self):
+        return len(self.column_configs)
+
+    @property
     def stacked(self):
         return StackedConfig(self, self.args.get("stacked", {}))
 

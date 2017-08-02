@@ -1,6 +1,4 @@
-import pandas
-
-from .base import Source
+from .base import Source, SourceType
 from .base import Proxy
 from .base import Record
 
@@ -8,7 +6,11 @@ from .base import Record
 class TableSource(Source):
     def __init__(self, config, data, columns=None, index=None):
         self.config = config
+        import pandas
         self.frame = pandas.DataFrame(data, columns=columns, index=index)
+
+    def type(self):
+        return SourceType.Table
 
     def record(self, index):
         series = self.frame[index]
